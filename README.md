@@ -1,1 +1,1 @@
-# financial-keeper-api
+# Financial app

@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  psql:
+    container_name: financial-keeper-psql
+    image: 'postgres:alpine'
+    environment:
+      POSTGRES_DB: 'fin_db'
+      POSTGRES_USER: 'fin_db'
+      POSTGRES_PASSWORD: 'YourNewStrongPassw0rd'
+    volumes:
+      - ./.psql:/var/lib/psql
+    ports:
+      - '5434:5432'
